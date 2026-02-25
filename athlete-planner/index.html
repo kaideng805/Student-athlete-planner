@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Athlete Monthly Planner</title>
+  <!-- Link to CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>🏆 Student Athlete Monthly Planner</h1>
 
+  <!-- Input section -->
   <div class="input-section">
     <input type="month" id="monthPicker">
     <input type="date" id="date">
     <input type="time" id="startTime">
     <input type="time" id="endTime">
-    
+
     <select id="type">
       <option value="practice">Practice</option>
       <option value="study">Study</option>
@@ -27,8 +29,10 @@
     <button onclick="addActivity()">Add</button>
   </div>
 
+  <!-- Calendar container -->
   <div id="calendar"></div>
 
+  <!-- Link to JS -->
   <script src="script.js"></script>
 </body>
 </html>
