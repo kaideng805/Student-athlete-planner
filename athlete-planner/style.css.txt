@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: white;
+}
+
+h1 {
+  background: orange;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.input-section {
+  text-align: center;
+  padding: 15px;
+}
+
+input, select, button {
+  padding: 6px;
+  margin: 4px;
+}
+
+button {
+  background: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.day-name {
+  font-weight: bold;
+  text-align: center;
+  color: orange;
+}
+
+.day-box {
+  border: 2px solid orange;
+  min-height: 300px;
+  font-size: 11px;
+  position: relative;
+  padding: 2px;
+}
+
+.day-number {
+  font-weight: bold;
+  color: orange;
+}
+
+/* Hour grid */
+.hour {
+  border-top: 1px solid #eee;
+  height: 20px;
+  position: relative;
+}
+
+/* Activity blocks */
+.activity {
+  color: white;
+  padding: 2px;
+  font-size: 10px;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  border-radius: 3px;
+}
+
+/* Color coding */
+.practice { background: red; }
+.study { background: gold; color: black; }
+.gym { background: darkorange; }
+.game { background: purple; }
+.other { background: gray; }
+
+/* Delete/Edit buttons */
+.activity button {
+  font-size: 8px;
+  margin-left: 3px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #calendar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
